@@ -11,8 +11,7 @@ public class ETLTest
         var expected = new Dictionary<string, int> { { "a", 1 } };
         Assert.That(ETL.Transform(old), Is.EqualTo(expected));
     }
-
-    [Ignore]
+    
     [Test]
     public void Transforms_multiple_values()
     {
@@ -20,8 +19,7 @@ public class ETLTest
         var expected = new Dictionary<string, int> { { "a", 1 }, { "e", 1 }, { "i", 1 }, { "o", 1 }, { "u", 1 } };
         Assert.That(ETL.Transform(old), Is.EqualTo(expected));
     }
-
-    [Ignore]
+    
     [Test]
     public void Transforms_multiple_keys()
     {
@@ -29,8 +27,7 @@ public class ETLTest
         var expected = new Dictionary<string, int> { { "a", 1 }, { "e", 1 }, { "d", 2 }, { "g", 2 } };
         Assert.That(ETL.Transform(old), Is.EqualTo(expected));
     }
-
-    [Ignore]
+    
     [Test]
     public void Transforms_a_full_dataset()
     {
